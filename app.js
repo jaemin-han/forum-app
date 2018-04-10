@@ -7,10 +7,12 @@ const app = vertex.app()
 // import routes
 const index = require('./routes/index')
 const api = require('./routes/api')
+const auth = require('./routes/auth')
 
 // set routes
 app.use('/', index)
-app.use('/api', api) // sample API Routes
+app.use('/api', api)
+app.use('/auth', auth) //connects to auth - specific path
 
 
 module.exports = app

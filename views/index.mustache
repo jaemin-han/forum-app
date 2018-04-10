@@ -9,9 +9,20 @@
 			<h1>Welcome to Forum App</h1>
 			<hr />
 			<div style="background:#f9f9f9;border:1px solid #ddd;border-radius:3px;padding:12px">
-				<form>
-					<input class="form-control" type="text" name="username" />
-					<input class="form-control" type="text" name="password" />
+				<h2>Register</h2>
+				<form action="/auth/register" method="POST">
+					<input class="form-control" type="text" name="username" placeholder="username"/><br />
+					<input class="form-control" type="password" name="password" placeholder="password"/><br />
+					<button type="submit">Register</button>
+				</form>
+
+				<hr />
+
+				<h2>Login</h2>
+				<form action="/auth/login" method="POST">
+					<input class="form-control" type="text" name="username" placeholder="username"/><br />
+					<input class="form-control" type="password" name="password" placeholder="password"/><br />
+					<button type="submit">Login</button>
 				</form>
 			</div>
 
