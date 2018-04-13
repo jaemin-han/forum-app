@@ -12,7 +12,7 @@
 			<h1>Welcome to Forum App</h1>
 			<hr />
 			<div style="background:#f9f9f9;border:1px solid #ddd;border-radius:3px;padding:12px">
-				<h2>Register</h2>
+				<h2>Register User</h2>
 				<form action="/auth/register" method="POST">
 					<input class="form-control" type="text" name="username" placeholder="username"/><br />
 					<input class="form-control" type="password" name="password" placeholder="password"/><br />
@@ -22,6 +22,14 @@
 				<hr />
 
 				<h2>Login</h2>
+				<form action="/auth/login" method="POST">
+					<input class="form-control" type="text" name="username" placeholder="username"/><br />
+					<input class="form-control" type="password" name="password" placeholder="password"/><br />
+					<button type="submit">Login</button>
+				</form>
+
+				{{! Attempt }}
+				<h2>Modal</h2>
 				<form action="/auth/login" method="POST">
 					<input class="form-control" type="text" name="username" placeholder="username"/><br />
 					<input class="form-control" type="password" name="password" placeholder="password"/><br />
